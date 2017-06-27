@@ -1,0 +1,156 @@
+/* Color palette
+#272932 - dark blue
+#0F7173 - light blue
+#E7ECEF - white
+#F05D5E - pink
+
+*/
+
+/* Global styles
+----------------------------------*/
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after{
+	box-sizing: inherit;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+}
+h1, h2{
+	font-family: 'Bree Serif', serif;
+}
+h1{
+	font-size: 80px;
+}
+h2{
+	font-size: 40px;
+	margin-top: 0;
+}
+h3{
+	margin: 0;
+}
+a{
+	color: #F05D5E;
+	
+}
+a:hover{
+	text-decoration: none;
+}
+.content-wrap{
+	max-width: 950px;
+	margin: 0 auto;
+	padding: 60px 50px;
+	overflow: auto;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+.btn{
+	text-decoration: none;
+	background: #F05D5E;
+	color: #E7ECEF;
+	padding: 10px;
+	display: inline-block
+}
+/* Header and Footer
+----------------------------------*/
+header, footer{
+	background: #272932;
+	color: #0F7173;
+}
+header h1, header h2 {
+	color: #E7ECEF;
+	margin: 0;
+}
+/* Header Styles*/
+header{
+	padding-top: 50px;
+	position: relative;
+}
+.profile-img {
+	
+	border-radius: 50%;
+	
+}
+.download{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* Navigation*/
+nav{
+	text-align: center;
+	background: #E7ECEF;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+nav a{
+	display: inline-block;
+	padding: 15px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+/* Footer Style */
+footer{
+	text-align: center;
+}
+.contact-info a{
+	padding:25px;
+	display: inline-block;
+}
+	
+
+/* Work Experience
+----------------------------------*/
+.work {
+	background: #E7ECEF;
+}
+h3 ~ p{
+	margin:0;
+}
+.job-description{
+	margin-bottom: 25px;
+}
+.job-description p:first-of-type{
+	margin-top:0;
+}
+
+/* Education
+----------------------------------*/
+.education{
+	background:#0F7173;
+	background: linear-gradient(rgba(141, 153, 174, 0.95), rgba(141, 153, 174, 0.85)), url(../Images/library.jpg) no-repeat fixed;
+	background-size: cover;
+}
+p + h3 {
+	margin-top: 30px;
+}
+
+/* Media Queries*/
+
+@media (min-width: 900px){
+	.col-wide{
+	width: 70%;
+	float: left;
+	padding-left: 20px;
+	
+}
+    .col-narrow{
+	width: 30%;
+	float: left;
+}
+}
+@media (max-width: 899px){
+	header{
+		text-align: center;
+	}
+	.profile-img{
+		max-width: 200px;
+	}
+}
+
